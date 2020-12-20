@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,KAAK;EACD,MAAM,EAAE,MAAM;EACd,6BAAuB;IACnB,KAAK,EAAE,KAAK;EAChB,OAAC;IACG,KAAK,ECRI,OAAO;IDShB,eAAe,EAAE,SAAS",
+"sources": ["../sass/committee.sass","../sass/_variables.sass"],
+"names": [],
+"file": "committee.css"
+}
