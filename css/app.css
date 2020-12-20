@@ -1,0 +1,98 @@
+body {
+  position: relative; }
+
+#hero-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -9999999; }
+
+main {
+  overflow: hidden; }
+  main .hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1rem;
+    align-items: center; }
+    main .hero .hero-img {
+      width: 650px;
+      height: auto; }
+    main .hero div {
+      display: grid;
+      grid-row-gap: 20px; }
+      main .hero div h1 {
+        color: #585858; }
+      main .hero div p {
+        color: #FF8B14;
+        font-size: 25px; }
+  main .committiees {
+    position: relative; }
+    main .committiees h2 {
+      color: #585858; }
+    main .committiees p {
+      color: #FF8B14;
+      font-size: 22px; }
+    main .committiees .toggling-btn {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 63%;
+      transform: translateY(-50%);
+      border: none;
+      background-color: #FF8B14;
+      border-radius: 250px;
+      font-size: 25px;
+      color: #ffffff;
+      cursor: pointer;
+      z-index: 99998;
+      transition: all 100ms ease-in;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+      main .committiees .toggling-btn:hover {
+        background-color: #fa7e00; }
+      main .committiees .toggling-btn:active {
+        background-color: #e07100; }
+    main .committiees .disabled {
+      background-color: #A9A9A9;
+      color: #666;
+      cursor: default; }
+      main .committiees .disabled:hover, main .committiees .disabled:active {
+        background-color: #A9A9A9;
+        color: #666; }
+    main .committiees #left-arrow {
+      left: 1rem; }
+    main .committiees #right-arrow {
+      right: 1rem; }
+    main .committiees .committees-contaiener {
+      position: relative;
+      display: flex;
+      padding-left: 2rem;
+      transition: all 150ms ease-in; }
+      main .committiees .committees-contaiener .committee {
+        margin: 2rem 2rem 2rem 0; }
+        main .committiees .committees-contaiener .committee div {
+          border-radius: 30px;
+          box-shadow: 0px 0px 10px #999; }
+          main .committiees .committees-contaiener .committee div .commmittee-name {
+            padding: 1rem 2rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+  main .contact {
+    position: relative;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center; }
+    main .contact h2 {
+      color: #FF8B14;
+      font-weight: 500; }
+    main .contact .form-container {
+      padding: 2rem;
+      box-shadow: 0px 0px 10px #999;
+      border-radius: 30px; }
+      main .contact .form-container form {
+        margin-top: 2rem; }
+        main .contact .form-container form .name {
+          justify-content: space-between; }
+
+/*# sourceMappingURL=app.css.map */
