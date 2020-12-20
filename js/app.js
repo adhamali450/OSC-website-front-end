@@ -43,7 +43,7 @@ function Move_Menu_right() {
     if (x == 0 || ((x - 1) * window.screen.width - 100) > -(ele_width.offsetWidth * num)) {
         x -= 1;
         var mar_right = (x * (window.screen.width - 100));
-        document.getElementById('committees-contaiener').style.left = mar_right;
+        document.getElementById('committees-contaiener').style.left = mar_right + 100;
 
     }
 

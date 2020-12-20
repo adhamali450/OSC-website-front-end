@@ -1,0 +1,27 @@
+@import 'variables'
+@import 'mixins'
+
+.word-container
+    width: 80%
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .word
+        border-radius: 25px
+        padding: 3rem
+        margin: 2rem 2rem 2rem 0
+        +apply-box-shadow(0,0,10px)
+    img
+        width: 400px
+        height: auto
+    h1
+        color: $dark-grey
+        margin-bottom: 1rem
+    p
+        color: $primary-orange
+        font-size: 23px
+        margin-bottom: 10px
+    a
+        color: $primary-orange
+        text-decoration: underline

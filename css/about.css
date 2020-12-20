@@ -1,0 +1,26 @@
+.word-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .word-container .word {
+    border-radius: 25px;
+    padding: 3rem;
+    margin: 2rem 2rem 2rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+  .word-container img {
+    width: 400px;
+    height: auto; }
+  .word-container h1 {
+    color: #585858;
+    margin-bottom: 1rem; }
+  .word-container p {
+    color: #FF8B14;
+    font-size: 23px;
+    margin-bottom: 10px; }
+  .word-container a {
+    color: #FF8B14;
+    text-decoration: underline; }
+
+/*# sourceMappingURL=about.css.map */
