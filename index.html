@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="stylesheet" href="css/queries.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Open Source Community | Home Page</title>
 </head>
@@ -24,23 +28,144 @@
                     <h1>Open Source Community</h1>
                 </div>
             </a>
-            <nav>
+            <nav class="main-nav" id="main-nav">
                 <ul class="flex">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a class="nav-link active" href="">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="flex">
+                        <button class="nav-link flex" id="btn-committees">
                             Committes
                             <ion-icon id="down-arrow" name="chevron-down-outline"></ion-icon>
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-hamburger" id="btn-hamburger"></button>
+            <nav class="hamburger-nav" id="hamburger-nav">
+                <ul>
+                    <li>
+                        <a class="nav-link active" href="">Home</a>
+                    </li>
+                    <li>
+                        <button class="nav-link flex" id="ham-btn-committees">
+                            Committes
+                            <ion-icon id="ham-down-arrow" name="chevron-forward-outline"></ion-icon>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                 </ul>
             </nav>
         </dev>
+        <div class="commmittees-ham-nav" id="commmittees-ham-nav">
+            <div class="top">
+                <button id="btn-back">
+                    <ion-icon name="arrow-back-sharp"></ion-icon>
+                </button>
+                <h3>Committees</h3>
+            </div>
+            <div class="bottom">
+                <a class="ham-dropdown-item" href="art.html">
+                    <img src="assets/icons-small/art.png" alt="art committee">
+                    Art & design
+                </a>
+                <a class="ham-dropdown-item" href="linux.html">
+                    <img src="assets/icons-small/linux.png" alt="linux committee">
+                    Linux
+                </a>
+                <a class="ham-dropdown-item" href="web.html">
+                    <img src="assets/icons-small/web.png" alt="web committee">
+                    Web
+                </a>
+                <a class="ham-dropdown-item" href="hr.html">
+                    <img src="assets/icons-small/hr.png" alt="hr committee">
+                    HR
+                </a>
+                <a class="ham-dropdown-item" href="pr.html">
+                    <img src="assets/icons-small/pr.png" alt="pr committee">
+                    PR
+                </a>
+                <a class="ham-dropdown-item" href="lr.html">
+                    <img src="assets/icons-small/lr.png" alt="lr committee">
+                    LR
+                </a>
+                <a class="ham-dropdown-item" href="blender.html">
+                    <img src="assets/icons-small/blender.png" alt="blender committee">
+                    Blender
+                </a>
+                <a class="ham-dropdown-item" href="game.html">
+                    <img src="assets/icons-small/game.png" alt="game committee">
+                    Game
+                </a>
+                <a class="ham-dropdown-item" href="game.html">
+                    <img src="assets/icons-small/projects.png" alt="projects committee">
+                    Project
+                </a>
+                <a class="ham-dropdown-item" href="english.html">
+                    <img src="assets/icons-small/english.png" alt="english committee">
+                    English
+                </a>
+                <a class="ham-dropdown-item" href="ccc.html">
+                    <img src="assets/icons-small/ccc.png" alt="ccc">
+                    CCC
+                </a>
+            </div>
+        </div>
+        <div class="container dropdown">
+            <div class="lhs">
+                <a class="dropdown-item" href="art.html">
+                    <img src="assets/icons-small/art.png" alt="art committee">
+                    Art & design
+                </a>
+                <a class="dropdown-item" href="linux.html">
+                    <img src="assets/icons-small/linux.png" alt="linux committee">
+                    Linux
+                </a>
+                <a class="dropdown-item" href="web.html">
+                    <img src="assets/icons-small/web.png" alt="web committee">
+                    Web
+                </a>
+                <a class="dropdown-item" href="hr.html">
+                    <img src="assets/icons-small/hr.png" alt="hr committee">
+                    HR
+                </a>
+                <a class="dropdown-item" href="pr.html">
+                    <img src="assets/icons-small/pr.png" alt="pr committee">
+                    PR
+                </a>
+                <a class="dropdown-item" href="lr.html">
+                    <img src="assets/icons-small/lr.png" alt="lr committee">
+                    LR
+                </a>
+            </div>
+            <div class="rhs">
+                <a class="dropdown-item" href="blender.html">
+                    <img src="assets/icons-small/blender.png" alt="blender committee">
+                    Blender
+                </a>
+                <a class="dropdown-item" href="game.html">
+                    <img src="assets/icons-small/game.png" alt="game committee">
+                    Game
+                </a>
+                <a class="dropdown-item" href="game.html">
+                    <img src="assets/icons-small/projects.png" alt="projects committee">
+                    Project
+                </a>
+                <a class="dropdown-item" href="english.html">
+                    <img src="assets/icons-small/english.png" alt="english committee">
+                    English
+                </a>
+                <a class="dropdown-item" href="ccc.html">
+                    <img src="assets/icons-small/ccc.png" alt="ccc">
+                    CCC
+                </a>
+            </div>
+        </div>
     </header>
 
     <main id="myMain">
@@ -174,6 +299,7 @@
                 </a>
             </div>
         </section>
+
         <div class="container">
             <section class="contact spacer">
                 <img src="assets/contact.png">

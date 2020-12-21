@@ -6,6 +6,7 @@ main .container:first-child {
     color: #FF8B14;
     font-size: 25px; }
   main .container:first-child .btn {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    flex-direction: row-reverse; }
 
 /*# sourceMappingURL=registeration-closed.css.map */

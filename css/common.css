@@ -9,7 +9,8 @@ body {
   height: 100vh; }
 
 header {
-  padding: 0.25rem 0; }
+  padding: 0.25rem 0;
+  position: relative; }
   header .container {
     justify-content: space-between; }
     header .container .logo img {
@@ -19,14 +20,122 @@ header {
       font-size: 22px;
       font-family: "Pacifico", cursive;
       color: #FF8B14; }
-    header .container nav li {
+    header .container .main-nav li {
       margin-right: 1rem; }
-      header .container nav li a {
-        font-size: 18px;
-        color: #585858; }
-        header .container nav li a #down-arrow {
-          margin-left: 5px;
-          color: #FF8B14; }
+    header .container .btn-hamburger {
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-image: url("../assets/icon-hamburger.svg"); }
+    header .container .showClose {
+      background-image: url("../assets/icon-close.svg"); }
+    header .container .hamburger-nav {
+      display: block;
+      position: absolute;
+      transform: translateY(-490px);
+      transition: all 0.2s ease-in;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9998;
+      left: 0;
+      background-color: #ffffff;
+      padding-top: 1rem; }
+      header .container .hamburger-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center; }
+        header .container .hamburger-nav ul li {
+          margin-top: 20px; }
+    header .container .show-ham-nav {
+      transform: translateY(490px); }
+    header .container .nav-link {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 4px;
+      color: #7F7F7F; }
+      header .container .nav-link:hover {
+        background-color: #F5F5F5; }
+      header .container .nav-link #down-arrow,
+      header .container .nav-link #ham-down-arrow {
+        margin-left: 5px;
+        color: #FF8B14; }
+    header .container .active {
+      background-color: #FF8B14;
+      color: #F5F5F5;
+      pointer-events: none;
+      cursor: default; }
+  header .dropdown {
+    position: absolute;
+    z-index: 9998;
+    top: -235px;
+    right: 50px;
+    width: 374px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #F5F5F5;
+    border: 3px solid #FF8B14;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: top 250ms ease-in; }
+    header .dropdown .lhs, header .dropdown .rhs {
+      padding: 10px; }
+      header .dropdown .lhs a, header .dropdown .rhs a {
+        padding: 0.3rem 0.75rem;
+        border-radius: 4px;
+        width: 166px;
+        color: #7F7F7F;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        transition: box-shadow 120ms ease-out; }
+        header .dropdown .lhs a img, header .dropdown .rhs a img {
+          margin-right: 1rem;
+          width: 23px; }
+        header .dropdown .lhs a:hover, header .dropdown .rhs a:hover {
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+  header .dropdown-active {
+    top: 85px; }
+  header .commmittees-ham-nav {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    left: -102%;
+    transition: all 0.2s ease-in;
+    background-color: #ffffff; }
+    header .commmittees-ham-nav .top {
+      background-color: #FF8B14;
+      color: #ffffff;
+      padding: 1rem;
+      display: flex; }
+      header .commmittees-ham-nav .top h3 {
+        font-size: 20px;
+        font-weight: 500; }
+      header .commmittees-ham-nav .top button {
+        color: #ffffff;
+        font-size: 25px;
+        margin-right: 1rem;
+        padding: 0.25rem; }
+    header .commmittees-ham-nav .bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1rem 0 1rem; }
+      header .commmittees-ham-nav .bottom a {
+        color: #585858;
+        padding: 0.25rem;
+        margin-bottom: 5px;
+        display: flex;
+        border-bottom: 2px solid #7F7F7F; }
+        header .commmittees-ham-nav .bottom a img {
+          width: 23px;
+          height: auto;
+          margin-right: 1rem; }
 
 .sticky {
   position: fixed;
@@ -87,7 +196,7 @@ footer {
   margin: 0 auto; }
 
 .flex {
-  display: flex;
+  display: flex !important;
   align-items: center; }
 
 ul {
@@ -95,7 +204,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: white; }
+  color: #fff; }
 
 h1,
 h2,
@@ -142,6 +251,11 @@ h4 {
   .btn:active {
     box-shadow: 0px 0px #888888;
     transform: translate(5px, 10px); }
+
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer; }
 
 .spacer {
   margin-top: 3rem; }

@@ -1,0 +1,8 @@
+@media only screen and (max-width: 750px) {
+  header #main-nav {
+    display: none; }
+
+  header #btn-hamburger {
+    display: block !important; } }
+
+/*# sourceMappingURL=queries.css.map */
