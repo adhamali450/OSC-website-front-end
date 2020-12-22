@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/committee.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,7 +22,7 @@
             <a class="logo" href="index.html">
                 <div class="flex">
                     <img src="assets/logo-2.png">
-                    <h1>Open Source Community</h1>
+                    <h3>Open Source Community</h3>
                 </div>
             </a>
             <nav class="main-nav" id="main-nav">
@@ -42,11 +41,14 @@
                     </li>
                 </ul>
             </nav>
-            <button class="btn-hamburger" id="btn-hamburger"></button>
+            <button class="btn-hamburger" id="btn-hamburger">
+                <ion-icon id="ham" name="menu-outline"></ion-icon>
+                <ion-icon id="close" name="close-outline"></ion-icon>
+            </button>
             <nav class="hamburger-nav" id="hamburger-nav">
                 <ul>
                     <li>
-                        <a class="nav-link active" href="">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li>
                         <button class="nav-link flex" id="ham-btn-committees">
@@ -210,9 +212,10 @@
                     <img src="assets/logo.png" alt="OSC logo">
                 </a>
                 <div class="writables">
-                    <h2>Open Source Community</h2>
-                    <p>FCIS Student Activity</p>
-                    <p>Copyright OSC © 2020, All rights are reserved</p>
+                    <h2 id="long-name">Open Source Community</h2>
+                    <h2 id="initials">O.S.C</h2>
+                    <h4>FCIS Student Activity</h4>
+                    <h5>Copyright OSC © 2020, All rights are reserved</h5>
                 </div>
             </div>
             <div class="social-media">

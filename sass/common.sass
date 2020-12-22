@@ -1,5 +1,6 @@
 @import 'variables'
 @import 'mixins'
+@import 'forms'
 
 *
     margin: 0
@@ -10,6 +11,12 @@
 
 body
     height: 100vh
+
+#hero-bg
+    position: absolute
+    width: 100%
+    z-index: -9999999
+    background-repeat: repeat-y
 
 header
     padding: 0.25rem 0
@@ -42,7 +49,8 @@ header
             #close
                 display: block
         .hamburger-nav
-            display: block
+            display: flex
+            flex-direction: column
 
             position: absolute
             top: -100vh
@@ -64,8 +72,9 @@ header
                 align-content: center
                 li
                     margin-top: 20px
+
         .show-ham-nav
-            top: 100px
+            top: 95px
         .nav-link
             display: block
             font-size: 18px
@@ -163,9 +172,36 @@ header
     width: 100%
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
     z-index: 99999
+
+.hero
+    div
+        h1
+            color: $dark-grey
+        p
+            color: $primary-orange
+
+.contact
+    margin-bottom: 10rem
+    display: flex
+    text-align: center
+    h2
+        color: $primary-orange
+        font-weight: 500
+    .form-container
+        padding: 2rem
+        box-shadow: 0px 0px 10px #999
+        border-radius: 30px
+        form
+            display: flex
+            flex-direction: column
+            margin-top: 2rem
+            .name
+                display: flex
+                justify-content: space-between
+
 footer
     width: 100%
-    height: 400px
+    height: 300px
     background-image: url('../assets/footer-bg.png')
     background-size: 150% 100%
     background-repeat: no-repeat
@@ -218,6 +254,7 @@ footer
                     color: #fff
                 &:active
                     background-color: darken($primary-orange, 10%)
+
 .container
     max-width: 95%
     margin: 0 auto
@@ -275,34 +312,3 @@ button
 
 .spacer
     margin-top: 3rem
-
-//forms css
-input:focus, textarea:focus, select:focus
-    outline: none
-
-input[type=text],
-select,
-textarea,
-    width: 100%
-    padding: 0.5rem 1rem
-    margin: 0.3rem 0
-    display: inline-block
-    border-radius: 6px
-    font-weight: 500
-    box-sizing: border-box
-    border: none
-    background-color: #ECECEE
-    color: #6B6B6B
-
-textarea
-    resize: vertical
-
-input[type=submit]
-    border: none
-    cursor: pointer
-    width: 100%
-    color: #fff
-    margin: 0.3rem 0
-
-input[marker=name]
-    width: 49%

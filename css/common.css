@@ -1,3 +1,33 @@
+input:focus, textarea:focus, select:focus {
+  outline: none; }
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: none;
+  background-color: #ECECEE;
+  color: #6B6B6B; }
+
+textarea {
+  resize: vertical; }
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+  margin: 0.3rem 0; }
+
+input[marker=name] {
+  width: 49%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +37,12 @@
 
 body {
   height: 100vh; }
+
+#hero-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -9999999;
+  background-repeat: repeat-y; }
 
 header {
   padding: 0.25rem 0;
@@ -35,7 +71,8 @@ header {
     header .container .showClose #close {
       display: block; }
     header .container .hamburger-nav {
-      display: block;
+      display: flex;
+      flex-direction: column;
       position: absolute;
       top: -100vh;
       transition: all 0.2s ease-in;
@@ -54,7 +91,7 @@ header {
         header .container .hamburger-nav ul li {
           margin-top: 20px; }
     header .container .show-ham-nav {
-      top: 100px; }
+      top: 95px; }
     header .container .nav-link {
       display: block;
       font-size: 18px;
@@ -150,9 +187,33 @@ header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 99999; }
 
+.hero div h1 {
+  color: #585858; }
+.hero div p {
+  color: #FF8B14; }
+
+.contact {
+  margin-bottom: 10rem;
+  display: flex;
+  text-align: center; }
+  .contact h2 {
+    color: #FF8B14;
+    font-weight: 500; }
+  .contact .form-container {
+    padding: 2rem;
+    box-shadow: 0px 0px 10px #999;
+    border-radius: 30px; }
+    .contact .form-container form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem; }
+      .contact .form-container form .name {
+        display: flex;
+        justify-content: space-between; }
+
 footer {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-image: url("../assets/footer-bg.png");
   background-size: 150% 100%;
   background-repeat: no-repeat;
@@ -265,35 +326,5 @@ button {
 
 .spacer {
   margin-top: 3rem; }
-
-input:focus, textarea:focus, select:focus {
-  outline: none; }
-
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  margin: 0.3rem 0;
-  display: inline-block;
-  border-radius: 6px;
-  font-weight: 500;
-  box-sizing: border-box;
-  border: none;
-  background-color: #ECECEE;
-  color: #6B6B6B; }
-
-textarea {
-  resize: vertical; }
-
-input[type=submit] {
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  color: #fff;
-  margin: 0.3rem 0; }
-
-input[marker=name] {
-  width: 49%; }
 
 /*# sourceMappingURL=common.css.map */
