@@ -3,6 +3,7 @@
 
 body
     position: relative
+    overflow: hidden
 
 main
     .hero
@@ -14,7 +15,6 @@ main
             display: grid
 
     .committiees
-        overflow: hidden
         position: relative
         h2
             color: $dark-grey
@@ -54,9 +54,10 @@ main
             right: 1rem
         .committees-container
             .committee
+                background-color: #ffffff
                 border-radius: 40px
-                box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
-                margin: 2rem 2rem 2rem 0
+                box-shadow: 0px -1px 10px rgba(0,0,0,0.25)
+                margin: 2rem 2rem 2rem 0 !important
                 transition: transform 150ms ease-in, box-shadow 150ms ease-in
                 div
                     border-radius: 30px
@@ -68,7 +69,7 @@ main
                         justify-content: space-between
 
                 &:hover
-                    transform: translateY(-3px) scale(1.01)
-                    box-shadow: 0px 0px 15px rgba(0,0,0,0.3)
+                    transform: translateY(-10px) scale(1.02)
+                    box-shadow: 0px -1px 15px rgba(0,0,0,0.3)
                     div
                         overflow: hidden

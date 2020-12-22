@@ -321,6 +321,10 @@ h4 {
   background-color: #FF8B14;
   box-shadow: 5px 10px #888888;
   transition: all 50ms ease-in; }
+  .btn:hover {
+    background-color: #fa7e00;
+    box-shadow: 4.5px 7px #888888;
+    transform: translate(0.5px, 3px); }
   .btn:active {
     box-shadow: 0px 0px #888888;
     transform: translate(5px, 10px); }
