@@ -21,6 +21,11 @@ function stick_header() {
     }
 }
 
+
+//horizontal slider
+x = 0;
+ele_width = document.getElementsByClassName('committee')[0];
+
 ////////////////////////////////////////////////////////////
 /////////////////  HAMBURGER BUTTON  ///////////////////////
 ////////////////////////////////////////////////////////////
@@ -50,9 +55,11 @@ var dropdown_menu = document.querySelector('.dropdown');
 function activateBtnDropDown() {
     btn_dropdown.classList.add('active');
     document.getElementById('down-arrow').style.color = '#fff';
+    console.log('adham');
 }
 function deactivateBtnDropDown() {
     btn_dropdown.classList.remove('active');
+    console.log('adham');
     document.getElementById('down-arrow').style.color = '#FF8B14';
 }
 
@@ -65,6 +72,8 @@ window.addEventListener('mouseup', function (event) {
         dropdown_menu.classList.remove('dropdown-active');
         deactivateBtnDropDown();
     }
+    console.log('adham');
+
 });
 
 //opens the menu when when the button in clicked
