@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAII,2BAAsB;EAClB,OAAO,EAAE,IAAI;EACb,8BAAE;IACE,KAAK,ECLL,OAAO;EDMX,6BAAC;IACG,KAAK,ECTA,OAAO;IDUZ,SAAS,EAAE,IAAI;EACnB,gCAAI;IACA,UAAU,EAAE,IAAI;IAChB,cAAc,EAAE,WAAW",
-"sources": ["../sass/registeration-closed.sass","../sass/_variables.sass"],
-"names": [],
-"file": "registeration-closed.css"
-}

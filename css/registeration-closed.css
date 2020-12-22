@@ -1,12 +1,20 @@
 main .container:first-child {
-  padding: 2rem; }
-  main .container:first-child h1 {
-    color: #585858; }
-  main .container:first-child p {
-    color: #FF8B14;
-    font-size: 25px; }
-  main .container:first-child .btn {
-    margin-top: 1rem;
-    flex-direction: row-reverse; }
+  padding: 2rem;
+}
 
-/*# sourceMappingURL=registeration-closed.css.map */
+main .container:first-child h1 {
+  color: #585858;
+}
+
+main .container:first-child p {
+  color: #FF8B14;
+  font-size: 25px;
+}
+
+main .container:first-child .btn {
+  margin-top: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
