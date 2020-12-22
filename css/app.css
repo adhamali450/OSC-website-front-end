@@ -11,6 +11,8 @@ main .hero {
     display: grid; }
 main .committiees {
   position: relative; }
+  main .committiees ol {
+    margin: 1rem 0 1rem 0; }
   main .committiees h2 {
     color: #585858; }
   main .committiees p {
