@@ -4,33 +4,28 @@ body {
 #hero-bg {
   position: absolute;
   width: 100%;
-  z-index: -9999999; }
+  z-index: -9999999;
+  background-repeat: repeat-y; }
 
 main {
   overflow: hidden; }
   main .hero {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-column-gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
     align-items: center; }
-    main .hero .hero-img {
-      width: 650px;
-      height: auto; }
     main .hero div {
-      display: grid;
-      grid-row-gap: 20px; }
+      display: grid; }
       main .hero div h1 {
         color: #585858; }
       main .hero div p {
-        color: #FF8B14;
-        font-size: 25px; }
+        color: #FF8B14; }
   main .committiees {
     position: relative; }
     main .committiees h2 {
       color: #585858; }
     main .committiees p {
-      color: #FF8B14;
-      font-size: 22px; }
+      color: #FF8B14; }
     main .committiees .toggling-btn {
       position: absolute;
       width: 50px;
@@ -85,10 +80,8 @@ main {
           main .committiees .committees-contaiener .committee:hover div {
             overflow: hidden; }
   main .contact {
-    position: relative;
     margin-bottom: 10rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     text-align: center; }
     main .contact h2 {
       color: #FF8B14;
@@ -98,8 +91,11 @@ main {
       box-shadow: 0px 0px 10px #999;
       border-radius: 30px; }
       main .contact .form-container form {
+        display: flex;
+        flex-direction: column;
         margin-top: 2rem; }
         main .contact .form-container form .name {
+          display: flex;
           justify-content: space-between; }
 
 /*# sourceMappingURL=app.css.map */
