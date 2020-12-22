@@ -174,7 +174,7 @@
     padding: 1rem 1rem 1.5rem 1rem;
   }
   footer {
-    background-image: url("../../assets/footer-bg-mobile.png");
+    background-image: url("../assets/footer-bg-mobile.png");
   }
   footer .credits h2 {
     font-size: 26px;
