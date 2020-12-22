@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/app.css" />
 
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -184,21 +185,16 @@
                 <img class="hero-img" src="assets/hero.png">
             </section>
         </div>
-        <section class="committiees spacer">
+        <div class="committiees spacer">
             <div class="container">
                 <h2>Our Committees</h2>
                 <p>What sets us apart from the others is our many great committees.
                     Checkout every committee <br> and choose your place.
                 </p>
             </div>
-            <!--Toggling arrows-->
-            <button class="toggling-btn" id="left-arrow" onclick="Move_Menu_left()">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-            </button>
-            <button class="toggling-btn" id="right-arrow" onclick="Move_Menu_right()">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-            <div class="committees-contaiener" id="committees-contaiener" style="left: 0px;">
+
+            <div class="committees-container gallery js-flickity" data-flickity-options='{ "wrapAround": true }'
+                id="committees-container" style="left: 0px;">
                 <a class="committee" href="art.html">
                     <div>
                         <img src="assets/committe_icons/Group 20@2x.png" alt="Art committee">
@@ -299,7 +295,7 @@
                     </div>
                 </a>
             </div>
-        </section>
+        </div>
 
         <div class="container">
             <section class="contact spacer">
@@ -355,7 +351,8 @@
     <script>
         AOS.init();
     </script>
-    <script src="js/app.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

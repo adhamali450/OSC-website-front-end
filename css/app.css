@@ -1,73 +1,69 @@
 body {
   position: relative; }
 
-main {
-  overflow: hidden; }
-  main .hero {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center; }
-    main .hero div {
-      display: grid; }
-  main .committiees {
-    position: relative; }
-    main .committiees h2 {
-      color: #585858; }
-    main .committiees p {
-      color: #FF8B14; }
-    main .committiees .toggling-btn {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 63%;
-      transform: translateY(-50%);
-      border: none;
-      background-color: #FF8B14;
-      border-radius: 250px;
-      font-size: 25px;
-      color: #ffffff;
-      cursor: pointer;
-      z-index: 99998;
-      transition: all 100ms ease-in;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
-      main .committiees .toggling-btn:hover {
-        background-color: #fa7e00; }
-      main .committiees .toggling-btn:active {
-        background-color: #e07100; }
-    main .committiees .disabled {
+main .hero {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center; }
+  main .hero div {
+    display: grid; }
+main .committiees {
+  overflow: hidden;
+  position: relative; }
+  main .committiees h2 {
+    color: #585858; }
+  main .committiees p {
+    color: #FF8B14; }
+  main .committiees .flickity-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #FF8B14;
+    border-radius: 250px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 99998;
+    transition: all 100ms ease-in;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+    main .committiees .flickity-button svg {
+      transform: scale(0.5); }
+    main .committiees .flickity-button:hover {
+      background-color: #fa7e00; }
+    main .committiees .flickity-button:active {
+      background-color: #e07100; }
+  main .committiees .disabled {
+    background-color: #A9A9A9;
+    color: #666;
+    cursor: default; }
+    main .committiees .disabled:hover, main .committiees .disabled:active {
       background-color: #A9A9A9;
-      color: #666;
-      cursor: default; }
-      main .committiees .disabled:hover, main .committiees .disabled:active {
-        background-color: #A9A9A9;
-        color: #666; }
-    main .committiees #left-arrow {
-      left: 1rem; }
-    main .committiees #right-arrow {
-      right: 1rem; }
-    main .committiees .committees-contaiener {
-      position: relative;
-      display: flex;
-      padding-left: 2rem;
-      transition: all 150ms ease-in; }
-      main .committiees .committees-contaiener .committee {
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        margin: 2rem 2rem 2rem 0;
-        transition: transform 150ms ease-in, box-shadow 150ms ease-in; }
-        main .committiees .committees-contaiener .committee div {
-          border-radius: 30px; }
-          main .committiees .committees-contaiener .committee div .commmittee-name {
-            padding: 1rem 2rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: space-between; }
-        main .committiees .committees-contaiener .committee:hover {
-          transform: translateY(-3px) scale(1.01);
-          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); }
-          main .committiees .committees-contaiener .committee:hover div {
-            overflow: hidden; }
+      color: #666; }
+  main .committiees #left-arrow {
+    left: 1rem; }
+  main .committiees #right-arrow {
+    right: 1rem; }
+  main .committiees .committees-container .committee {
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 2rem 2rem 2rem 0;
+    transition: transform 150ms ease-in, box-shadow 150ms ease-in; }
+    main .committiees .committees-container .committee div {
+      border-radius: 30px; }
+      main .committiees .committees-container .committee div .commmittee-name {
+        padding: 1rem 2rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+    main .committiees .committees-container .committee:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); }
+      main .committiees .committees-container .committee:hover div {
+        overflow: hidden; }
 
 /*# sourceMappingURL=app.css.map */

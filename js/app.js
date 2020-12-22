@@ -21,36 +21,6 @@ function stick_header() {
     }
 }
 
-
-//horizontal slider
-x = 0;
-ele_width = document.getElementsByClassName('committee')[0];
-
-function Move_Menu_left() {
-    if (x < 0) {
-        x += 1;
-        var mar_left = (x * (window.screen.width));
-        document.getElementById('committees-contaiener').style.left = mar_left;
-    }
-    else {
-        console.log('cant move left');
-    }
-}
-
-function Move_Menu_right() {
-    num = 14
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        num = 15
-    }
-    if (x == 0 || ((x - 1) * window.screen.width - 100) > -(ele_width.offsetWidth * num)) {
-        x -= 1;
-        var mar_right = (x * (window.screen.width - 100));
-        document.getElementById('committees-contaiener').style.left = mar_right + 100;
-
-    }
-
-}
-
 ////////////////////////////////////////////////////////////
 /////////////////  HAMBURGER BUTTON  ///////////////////////
 ////////////////////////////////////////////////////////////

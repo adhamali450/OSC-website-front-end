@@ -5,7 +5,6 @@ body
     position: relative
 
 main
-    overflow: hidden
     .hero
         display: flex
         flex-direction: row
@@ -15,15 +14,16 @@ main
             display: grid
 
     .committiees
+        overflow: hidden
         position: relative
         h2
             color: $dark-grey
         p
             color: $primary-orange
-        .toggling-btn
+        .flickity-button
             position: absolute
             +set-size(50px, 50px)
-            top: 63%
+            top: 50%
             transform: translateY(-50%)
             border: none
             background-color: $primary-orange
@@ -34,6 +34,8 @@ main
             z-index: 99998
             transition: all 100ms ease-in
             +apply-box-shadow(0,0,10px)
+            svg
+                transform: scale(0.5)
             &:hover
                 background-color: darken($primary-orange, 5%)
             &:active
@@ -50,13 +52,9 @@ main
             left: 1rem
         #right-arrow
             right: 1rem
-        .committees-contaiener
-            position: relative
-            display: flex
-            padding-left: 2rem
-            transition: all 150ms ease-in
+        .committees-container
             .committee
-                border-radius: 30px
+                border-radius: 40px
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
                 margin: 2rem 2rem 2rem 0
                 transition: transform 150ms ease-in, box-shadow 150ms ease-in
