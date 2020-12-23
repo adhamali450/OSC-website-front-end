@@ -111,8 +111,6 @@
   body main .contact img {
     z-index: -99;
     width: 100%;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
   }
   body main .contact .form-container {
     background-color: #fff;

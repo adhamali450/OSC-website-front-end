@@ -118,9 +118,6 @@ header .container .hamburger-nav {
   z-index: 9998;
   left: 0;
   background-color: #ffffff;
-  background-image: url("../assets/ham-menu-pattern.svg");
-  background-repeat: no-repeat;
-  background-position-y: 47%;
   padding-top: 1rem;
 }
 
@@ -252,21 +249,24 @@ header .commmittees-ham-nav {
 header .commmittees-ham-nav .top {
   background-color: #FF8B14;
   color: #ffffff;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .commmittees-ham-nav .top h3 {
-  font-weight: 500;
 }
 
 header .commmittees-ham-nav .top button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   color: #ffffff;
   font-size: 25px;
-  margin-right: 1rem;
-  padding: 0.25rem;
+  padding: 1rem;
+}
+
+header .commmittees-ham-nav .top button h3 {
+  font-weight: 500;
+  margin-left: 1rem;
 }
 
 header .commmittees-ham-nav .bottom {
