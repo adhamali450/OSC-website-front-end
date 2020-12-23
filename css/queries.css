@@ -95,7 +95,8 @@
   }
   body main .hero .btn {
     max-width: 999px;
-    margin: 1.5rem 4rem 0 4rem;
+    width: 300px !important;
+    margin: 0 auto;
   }
   body main .contact {
     -webkit-box-orient: vertical;
@@ -277,5 +278,78 @@
   main select,
   main textarea {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1126px) {
+  main .hero .committee-illustration {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main .hero .writables {
+    margin-top: 2rem !important;
+  }
+  main .hero .writables p {
+    margin-top: 1rem;
+  }
+  main .hero .committee-illustration {
+    height: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  main .hero .committee-illustration {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main .container:first-child p {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  main .container:first-child {
+    padding: 0.5rem !important;
+  }
+  main .container:first-child h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .hero #info-img {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .hero #info-img {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 1rem;
+  }
+  .hero .word {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero #info-img {
+    width: 250px;
+  }
+  .hero .word {
+    padding: 1.5rem;
   }
 }
