@@ -80,6 +80,23 @@ header .container .main-nav li {
   margin-right: 1rem;
 }
 
+header .container .main-nav li .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .main-nav li .nav-link .left-icon {
+  margin-right: 5px;
+  font-size: calc( 100% + 7px);
+}
+
 header .container .btn-hamburger {
   display: none;
   font-size: 25px;
@@ -148,7 +165,15 @@ header .container .show-ham-nav {
 }
 
 header .container .nav-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   font-weight: 500;
   padding: 6px 12px;
@@ -164,6 +189,11 @@ header .container .nav-link #down-arrow,
 header .container .nav-link #ham-down-arrow {
   margin-left: 5px;
   color: #FF8B14;
+}
+
+header .container .nav-link .left-icon {
+  margin-right: 5px;
+  font-size: calc( 100% + 7px);
 }
 
 header .container .active {

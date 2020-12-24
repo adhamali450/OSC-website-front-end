@@ -140,3 +140,12 @@ main .committiees .committees-container .committee:hover {
 main .committiees .committees-container .committee:hover div {
   overflow: hidden;
 }
+
+main .committiees .committees-container div {
+  position: relative;
+}
+
+main .committiees .committees-container div .is-selected {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}

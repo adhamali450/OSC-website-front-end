@@ -11,9 +11,14 @@ main .container:nth-child(1) .hero .writables {
   margin-right: 1rem;
 }
 
-main .container:nth-child(1) .hero .writables a {
+main .container:nth-child(1) .hero .writables a:not(.btn) {
   color: #FF8B14;
   text-decoration: underline;
+}
+
+main .container:nth-child(1) .hero .writables .btn {
+  max-width: 300px !important;
+  margin-top: 1rem;
 }
 
 main .container:nth-child(1) .hero .committee-illustration {

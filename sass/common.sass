@@ -33,6 +33,13 @@ header
         .main-nav
             li
                 margin-right: 1rem
+                .nav-link
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .left-icon
+                        margin-right: 5px
+                        font-size: calc( 100% + 7px )
         .btn-hamburger
             display: none
             font-size: 25px
@@ -77,7 +84,10 @@ header
         .show-ham-nav
             top: 95px
         .nav-link
-            display: block
+
+            display: flex
+            justify-content: space-between
+            align-items: center
             font-size: 18px
             font-weight: 500
             padding: 6px 12px
@@ -89,6 +99,9 @@ header
             #ham-down-arrow
                 margin-left: 5px
                 color: $primary-orange
+            .left-icon
+                margin-right: 5px
+                font-size: calc( 100% + 7px )
         .active
             background-color: $primary-orange
             color: #F5F5F5
