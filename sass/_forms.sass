@@ -1,3 +1,6 @@
+@import 'variables'
+@import 'mixins'
+
 input:focus, textarea:focus, select:focus
     outline: none
 
@@ -11,9 +14,15 @@ textarea,
     border-radius: 6px
     font-weight: 500
     box-sizing: border-box
-    border: none
     background-color: #ECECEE
     color: #6B6B6B
+    border: 2.5px solid transparent
+    transition: border 80ms ease-in, background-color 80ms ease-in
+    &:hover
+        border: 2.5px solid #DDDDDD
+    &:focus
+        border: 2.5px solid #CCCCCC
+        background-color: #fafafa
 
 textarea
     resize: vertical

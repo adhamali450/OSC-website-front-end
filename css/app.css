@@ -101,19 +101,15 @@ main .committiees .committees-container ol .is-selected {
 }
 
 main .committiees .committees-container .committee {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 40px;
-  -webkit-box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);
   margin: 2rem 2rem 2rem 0 !important;
-  -webkit-transition: -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms ease-in;
-  transition: -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms ease-in;
-  transition: transform 150ms ease-in, box-shadow 150ms ease-in;
-  transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms ease-in;
-}
-
-main .committiees .committees-container .committee div {
-  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms linear;
+  transition: -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms linear;
+  transition: transform 150ms ease-in, box-shadow 150ms linear;
+  transition: transform 150ms ease-in, box-shadow 150ms linear, -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms linear;
 }
 
 main .committiees .committees-container .committee div .commmittee-name {
@@ -131,10 +127,10 @@ main .committiees .committees-container .committee div .commmittee-name {
 }
 
 main .committiees .committees-container .committee:hover {
-  -webkit-transform: translateY(-10px) scale(1.02);
-          transform: translateY(-10px) scale(1.02);
-  -webkit-box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 main .committiees .committees-container .committee:hover div {
@@ -143,9 +139,4 @@ main .committiees .committees-container .committee:hover div {
 
 main .committiees .committees-container div {
   position: relative;
-}
-
-main .committiees .committees-container div .is-selected {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
 }

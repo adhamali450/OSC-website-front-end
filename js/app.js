@@ -101,3 +101,22 @@ function toggleHamburgerDropDownOff() {
     ham_menu.style.left = '0';
     hamburger_dropdown_menu.style.left = '-102%';
 }
+
+
+//btn animations in js because of AOS animations 
+const isHover = e => e.parentElement.querySelector(':hover') === e;
+
+const homeHeroBtn = document.getElementById('home-hero-btn');
+document.addEventListener('mousemove', function checkHover() {
+    const hovered = isHover(homeHeroBtn);
+    if (hovered !== checkHover.hovered) {
+        if (hovered) {
+            homeHeroBtn.classList.add('animated-btn');
+        }
+        else {
+            homeHeroBtn.classList.remove('animated-btn');
+        }
+        console.log(homeHeroBtn.style.transition);
+        checkHover.hovered = hovered;
+    }
+});

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/svg-heading.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -19,7 +20,8 @@
 
 <body>
 
-    <img id="hero-bg" src="assets/hero-bg.png">
+    <img data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="1000" id="hero-bg"
+        src="assets/hero-bg.png">
 
     <header id="myHeader">
         <dev class="container flex">
@@ -189,11 +191,15 @@
     <main id="myMain">
         <div class="container">
             <section class="hero flex">
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <h1>We are Open Source Community</h1>
-                    <p>Our goal is to make you ready for real world Jobs & Challenges.
+                <div>
+                    <h1 data-aos="fade-up" data-aos-duration="750" data-aos-delay="0">We are Open Source Community</h1>
+
+                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="150">Our goal is to make you ready for
+                        real world Jobs &
+                        Challenges.
                         Good enough for you? Register now</p>
-                    <a class="btn" href="registeration-closed.html">
+                    <a class="btn" id="home-hero-btn" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500"
+                        href="registeration-closed.html">
                         Register now
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>

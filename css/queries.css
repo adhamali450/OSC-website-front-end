@@ -341,7 +341,7 @@
 }
 
 @media only screen and (max-width: 960px) {
-  main .container:first-child p {
+  main .container:first-child #registeration-p {
     margin-top: 1rem;
   }
 }

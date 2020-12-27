@@ -13,9 +13,24 @@ textarea {
   font-weight: 500;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: none;
   background-color: #ECECEE;
   color: #6B6B6B;
+  border: 2.5px solid transparent;
+  -webkit-transition: border 80ms ease-in, background-color 80ms ease-in;
+  transition: border 80ms ease-in, background-color 80ms ease-in;
+}
+
+input[type=text]:hover,
+select:hover,
+textarea:hover {
+  border: 2.5px solid #DDDDDD;
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+  border: 2.5px solid #CCCCCC;
+  background-color: #fafafa;
 }
 
 textarea {
@@ -46,6 +61,7 @@ input[marker=name] {
 
 body {
   height: 100vh;
+  background-color: transparent;
 }
 
 #hero-bg {
@@ -352,6 +368,9 @@ header .commmittees-ham-nav .bottom a img {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact h2 {
@@ -553,28 +572,28 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.7rem 1rem;
-  text-align: center;
   border-radius: 5px;
   background-color: #FF8B14;
   -webkit-box-shadow: 5px 10px #888888;
           box-shadow: 5px 10px #888888;
-  -webkit-transition: all 50ms ease-in;
-  transition: all 50ms ease-in;
 }
 
-.btn:hover {
+.animated-btn {
+  -webkit-transition: -webkit-transform 100ms ease-in, -webkit-box-shadow 100ms ease-in !important;
+  transition: -webkit-transform 100ms ease-in, -webkit-box-shadow 100ms ease-in !important;
+  transition: transform 100ms ease-in, box-shadow 100ms ease-in !important;
+  transition: transform 100ms ease-in, box-shadow 100ms ease-in, -webkit-transform 100ms ease-in, -webkit-box-shadow 100ms ease-in !important;
+}
+
+.animated-btn:hover {
   background-color: #fa7e00;
-  -webkit-box-shadow: 4.5px 7px #888888;
-          box-shadow: 4.5px 7px #888888;
-  -webkit-transform: translate(0.5px, 3px);
-          transform: translate(0.5px, 3px);
 }
 
-.btn:active {
-  -webkit-box-shadow: 0px 0px #888888;
-          box-shadow: 0px 0px #888888;
-  -webkit-transform: translate(5px, 10px);
-          transform: translate(5px, 10px);
+.animated-btn:active {
+  -webkit-transform: translate(5px, 10px) !important;
+          transform: translate(5px, 10px) !important;
+  -webkit-box-shadow: 0px 0px #888888 !important;
+          box-shadow: 0px 0px #888888 !important;
 }
 
 button {
