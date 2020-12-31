@@ -12,12 +12,10 @@ var sticky = header.offsetTop;
 function stick_header() {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-        header.style.background = "rgba(255, 255, 255, 0.95)";
         main.style.paddingTop = "100px";
     } else {
         header.classList.remove("sticky");
         main.style.paddingTop = 0;
-        header.style.background = "rgba(255, 255, 255, 0)";
     }
 }
 

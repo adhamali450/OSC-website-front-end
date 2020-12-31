@@ -10,6 +10,17 @@
     outline: none
     -webkit-tap-highlight-color: rgba(0,0,0,0)
 
+.light
+    background-color: #fff
+    h1
+        color: $dark-grey
+    h2
+        color: $dark-grey
+    p
+        color: $primary-orange
+    .sticky
+        background: rgba(255, 255, 255, 0.95) none repeat scroll 0% 0% !important
+
 body
     height: 100vh
     overflow-x: hidden
@@ -190,32 +201,22 @@ header
                     width: 23px
                     height: auto
                     margin-right: 1rem
+
 .sticky
     position: fixed
     top: 0
     width: 100%
+    background-color: transparent
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
     z-index: 99999
-
-.hero
-    div
-        h1
-            color: $dark-grey
-        p
-            color: $primary-orange
 
 .contact
     margin-bottom: 10rem
     display: flex
     text-align: center
     align-items: center
-    h2
-        color: $primary-orange
-        font-weight: 500
     .form-container
         padding: 2rem
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
-        border-radius: 30px
         form
             display: flex
             flex-direction: column
@@ -223,6 +224,10 @@ header
             .name
                 display: flex
                 justify-content: space-between
+
+.floating
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    border-radius: 30px
 
 footer
     width: 100%

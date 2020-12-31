@@ -61,14 +61,6 @@ main .hero img {
   position: relative;
 }
 
-.committiees h2 {
-  color: #585858;
-}
-
-.committiees p {
-  color: #FF8B14;
-}
-
 .committiees .flickity-button {
   position: absolute;
   width: 50px;
@@ -100,17 +92,6 @@ main .hero img {
 
 .committiees .flickity-button:active {
   background-color: #e07100;
-}
-
-.committiees .disabled {
-  background-color: #A9A9A9;
-  color: #666;
-  cursor: default;
-}
-
-.committiees .disabled:hover, .committiees .disabled:active {
-  background-color: #A9A9A9;
-  color: #666;
 }
 
 .committiees #left-arrow {

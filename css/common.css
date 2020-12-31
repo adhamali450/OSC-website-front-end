@@ -59,6 +59,26 @@ input[marker=name] {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.light {
+  background-color: #fff;
+}
+
+.light h1 {
+  color: #585858;
+}
+
+.light h2 {
+  color: #585858;
+}
+
+.light p {
+  color: #FF8B14;
+}
+
+.light .sticky {
+  background: rgba(255, 255, 255, 0.95) none repeat scroll 0% 0% !important;
+}
+
 body {
   height: 100vh;
   overflow-x: hidden;
@@ -361,17 +381,10 @@ header .commmittees-ham-nav .bottom a img {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: transparent;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 99999;
-}
-
-.hero div h1 {
-  color: #585858;
-}
-
-.hero div p {
-  color: #FF8B14;
 }
 
 .contact {
@@ -385,16 +398,8 @@ header .commmittees-ham-nav .bottom a img {
           align-items: center;
 }
 
-.contact h2 {
-  color: #FF8B14;
-  font-weight: 500;
-}
-
 .contact .form-container {
   padding: 2rem;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
 }
 
 .contact .form-container form {
@@ -415,6 +420,12 @@ header .commmittees-ham-nav .bottom a img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.floating {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
 }
 
 footer {
