@@ -172,7 +172,7 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 815px) {
   header #main-nav {
     display: none;
   }
@@ -182,6 +182,9 @@
 }
 
 @media only screen and (max-width: 546px) {
+  header .container {
+    margin: 0 1rem;
+  }
   main h1 {
     font-size: 33px;
   }

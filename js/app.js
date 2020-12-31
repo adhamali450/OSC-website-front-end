@@ -91,7 +91,7 @@ var btn_back = document.getElementById('btn-back');
 ham_btn_dropdown.onclick = function () { toggleHamburgerDropDownOn() };
 
 function toggleHamburgerDropDownOn() {
-    ham_menu.style.left = '102%';
+    ham_menu.style.left = '100vw';
     hamburger_dropdown_menu.style.left = '0';
 }
 
@@ -99,7 +99,7 @@ btn_back.onclick = function () { toggleHamburgerDropDownOff() };
 
 function toggleHamburgerDropDownOff() {
     ham_menu.style.left = '0';
-    hamburger_dropdown_menu.style.left = '-102%';
+    hamburger_dropdown_menu.style.left = '-100vw';
 }
 
 
