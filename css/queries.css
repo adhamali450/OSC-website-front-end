@@ -30,7 +30,7 @@
 @media only screen and (max-width: 1920px) {
   body h1 {
     font-size: 45px;
-    line-height: 40px;
+    line-height: 54px;
   }
   body h2 {
     font-size: 36px;
@@ -329,8 +329,8 @@
   main .hero .writables {
     margin-top: 2rem !important;
   }
-  main .hero .writables p {
-    margin-top: 1rem;
+  main .hero .writables .committee-desciption {
+    margin: 10rem !important;
   }
   main .hero .committee-illustration {
     height: 250px !important;

@@ -11,6 +11,10 @@ main .container:nth-child(1) .hero .writables {
   margin-right: 1rem;
 }
 
+main .container:nth-child(1) .hero .writables .committee-desciption {
+  margin: 1rem 0;
+}
+
 main .container:nth-child(1) .hero .writables a:not(.btn) {
   color: #FF8B14;
   text-decoration: underline;
