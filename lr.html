@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css" />
+
     <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/queries/committiee.css" />
 
     <link rel="stylesheet" href="css/committee.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,7 +18,8 @@
 
 <body class="light">
 
-    <img id="hero-bg" src="assets/hero-bg.png">
+    <img data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="1000" id="hero-bg"
+        src="assets/hero-bg.png">
 
     <header id="myHeader">
         <dev class="container flex">
@@ -80,9 +83,8 @@
         <div class="commmittees-ham-nav" id="commmittees-ham-nav">
             <div class="top">
                 <button id="btn-back">
-                    <p>
-                        <ion-icon name="arrow-back-sharp"></ion-icon>
-                    </p>
+                    <ion-icon name="arrow-back-sharp"></ion-icon>
+
                     <h3>Committees</h3>
                 </button>
             </div>
@@ -189,9 +191,10 @@
         <div class="container">
 
             <section class="hero flex">
-                <div class="writables" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="committee-name">LR Committee</h1>
-                    <p class="committee-desciption">
+                <div class="writables">
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="committee-name">LR
+                        Committee</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" class="committee-desciption">
                         <strong>
                             Share the logistics.
                         </strong>
@@ -200,7 +203,8 @@
                         deals with the outer resources of OSC, printing posters and banners,
                         and the other needed materials.
                     </p>
-                    <a class="btn animated-btn" href="registeration-closed.html">
+                    <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750" class="btn" id="hero-btn"
+                        href="registeration-closed.html">
                         Register to LR committee
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
@@ -220,7 +224,7 @@
                             <input marker="name" type="text" placeholder="last name">
                         </div>
                         <textarea name="message" placeholder="message"></textarea>
-                        <input class="btn animated-btn" type="submit" value="Submit">
+                        <input class="btn" id="hero-btn" type="submit" value="Submit">
                     </form>
                 </div>
             </section>

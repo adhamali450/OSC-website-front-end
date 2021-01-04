@@ -81,7 +81,7 @@ input[marker=name] {
 
 body {
   height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 #hero-bg {

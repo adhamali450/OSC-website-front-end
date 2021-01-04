@@ -101,7 +101,33 @@ function toggleHamburgerDropDownOff() {
 }
 
 
-//btn animations in js because of AOS animations 
+//btn animations in js because of <<AOS animations>> 
+const isHover = e => e.parentElement.querySelector(':hover') === e;
+const heroBtns = document.querySelectorAll('#hero-btn');
+
+document.addEventListener('mousemove', function checkHover() {
+
+    for (let i = 0; i < heroBtns.length; i++) {
+        const heroBtn = heroBtns[i];
+
+        const hovered = isHover(heroBtn);
+        if (hovered !== checkHover.hovered) {
+            if (hovered) {
+                heroBtn.classList.add('animated-btn');
+            }
+            else {
+                heroBtn.classList.remove('animated-btn');
+            }
+            console.log("hero button hovered");
+            checkHover.hovered = hovered;
+        }
+    }
+});
+
+
+/*
+
+/btn animations in js because of AOS animations
 const isHover = e => e.parentElement.querySelector(':hover') === e;
 
 const homeHeroBtn = document.getElementById('home-hero-btn');
@@ -118,3 +144,5 @@ document.addEventListener('mousemove', function checkHover() {
         checkHover.hovered = hovered;
     }
 });
+
+*/

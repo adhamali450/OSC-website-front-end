@@ -20,7 +20,7 @@
     line-height: normal;
   }
   body .contact img {
-    width: 865px;
+    width: 790px;
   }
   body .btn {
     max-width: 200px;
@@ -49,7 +49,7 @@
     line-height: normal;
   }
   body .contact img {
-    width: 865px;
+    width: 790px;
   }
   body .btn {
     max-width: 200px;
@@ -254,46 +254,6 @@
 }
 
 @media only screen and (max-width: 1920px) {
-  body main .hero div {
-    grid-row-gap: 20px;
-  }
-  body main .hero .hero-img {
-    width: 650px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  body main .hero .hero-img {
-    width: 500px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  body main .committiees p br {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .committiees .committees-container ol .dot {
-    width: 8px;
-    height: 8px;
-    margin: 0 5px;
-  }
-}
-
-@media only screen and (max-width: 546px) {
-  main .hero .hero-img {
-    width: 350px !important;
-  }
-  main .committiees .committees-container button {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1920px) {
   body input[type=text],
   body input[type=submit],
   body select,
@@ -316,78 +276,5 @@
   main select,
   main textarea {
     font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 1126px) {
-  main .hero .committee-illustration {
-    height: 300px !important;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  main .hero .writables {
-    margin-top: 2rem !important;
-  }
-  main .hero .writables .committee-desciption {
-    margin: 10rem !important;
-  }
-  main .hero .committee-illustration {
-    height: 250px !important;
-  }
-}
-
-@media only screen and (max-width: 546px) {
-  main .hero .committee-illustration {
-    height: 200px !important;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  main .container:first-child #registeration-p {
-    margin-top: 1rem;
-  }
-}
-
-@media only screen and (max-width: 546px) {
-  main .container:first-child {
-    padding: 0.5rem !important;
-  }
-  main .container:first-child h1 {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 1920px) {
-  .hero #info-img {
-    width: 450px;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .hero #info-img {
-    width: 350px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-top: 1rem;
-  }
-  .hero .word {
-    margin-right: 0;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .hero #info-img {
-    width: 250px;
-  }
-  .hero .word {
-    padding: 1.5rem;
   }
 }
